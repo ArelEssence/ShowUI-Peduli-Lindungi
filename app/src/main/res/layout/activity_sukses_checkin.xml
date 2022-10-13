@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/abu2"
+    tools:context=".sukses_checkin">
+
+
+    <!-- kotak utama -->
+
+    <ImageView
+        android:id="@+id/image_checkin_berhasil"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:src="@drawable/ic_checklist"
+        app:layout_constraintBottom_toTopOf="@+id/text_checkin_berhasil"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/text_checkin_berhasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Check-In Berhasil"
+        android:textColor="@color/green"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/kotak_attribut"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_checkin_berhasil">></TextView>
+
+    <LinearLayout
+        android:id="@+id/kotak_attribut"
+        android:layout_width="361dp"
+        android:layout_height="242dp"
+        android:layout_margin="30dp"
+        android:background="@drawable/background_checkin"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447"
+        tools:ignore="MissingConstraints">
+
+        <!-- check-in sendiri -->
+
+        <LinearLayout
+            android:layout_width="177dp"
+            android:layout_height="29dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/background_checkin3"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="525dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="      Check-in Sendiri"
+                android:textStyle="bold">
+            </TextView>
+
+        </LinearLayout>
+
+        <!-- nama lokasi -->
+
+        <LinearLayout
+            android:layout_width="299dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/white"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="525dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_location_on_24">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/nama_tempat2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:textStyle="bold"
+                android:textSize="23dp"
+                android:hint="sample">
+            </TextView>
+
+
+        </LinearLayout>
+
+        <!-- total keramaian -->
+
+            <TextView
+                android:id="@+id/total_keramaian2"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="9dp"
+                android:layout_marginEnd="1dp"
+                android:background="@color/white"
+                android:textSize="17dp"
+                android:hint="sample">
+            </TextView>
+
+        <!-- tanggal & jam -->
+
+        <LinearLayout
+            android:layout_width="299dp"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="1dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_calendar_today_24">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/tanggal2"
+                android:layout_width="122dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:textStyle="bold"
+                android:textSize="23dp"
+                android:hint="sample">
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_watch_later_24">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/jam2"
+                android:layout_width="129dp"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:textStyle="bold"
+                android:textSize="23dp"
+                android:hint="sample">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <!-- Nama Orang -->
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/background_checkin2"
+            tools:layout_editor_absoluteX="114dp"
+            tools:layout_editor_absoluteY="525dp">
+
+            <TextView
+                android:id="@+id/nama_orang2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:hint="sample">
+            </TextView>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
